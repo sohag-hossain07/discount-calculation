@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>discount price</title>
+    <!-- cdn link -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- styles -->
+    <style>
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- discount cart -->
+    <div
+      class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+    >
+      <svg
+        class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400"
+        aria-hidden="true"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z"
+          clip-rule="evenodd"
+        ></path>
+        <path
+          d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"
+        ></path>
+      </svg>
+      <a href="#">
+        <h5
+          class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+        >
+          Discount Cart
+        </h5>
+      </a>
+
+      <!-- total price -->
+      <p>Price: <span id="price">1000.00</span> Tk</p>
+
+      <!-- coupon -->
+      <label for="coupon"
+        >Coupon:
+        <input
+          id="coupon"
+          class="mb-3 font-normal text-gray-500 py-2 pl-3 mt-3 ml-2 border rounded-md dark:text-gray-400"
+          placeholder="enter your coupon"
+      /></label>
+
+      <!-- error message -->
+      <p id="error-message"></p>
+
+      <!-- button -->
+      <button
+        id="payment-button"
+        type="button"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-4 mt-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+      >
+        Payment
+      </button>
+      <!-- payable total -->
+      <p>Payable total: <span id="payment-total">0.00</span> Tk</p>
+    </div>
+
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
